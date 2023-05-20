@@ -1,0 +1,55 @@
+.footer {
+  padding: 50px 10px;
+  background: #161e2c;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.socialinsert {
+  width: 34px;
+  height: 34px;
+  margin-top: -5px;
+}
+
+
+.bottom {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.heading {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footerlink {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.name {
+  /* font-weight: bold; */
+  /* font-family: 'MV Boli'; */
+  font-size: 16px;
+}
+
+.name1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.phone1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.small {
+  font-size: 28px;
+}

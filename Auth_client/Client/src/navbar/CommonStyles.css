@@ -1,0 +1,413 @@
+.menus {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.is-current {
+    background-color: black;
+    color: white;
+    border-radius: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.hierarchy_menus {
+    background-color: white;
+    color: grey;
+    border-radius: 10;
+}
+
+.ms-auto {
+    margin-top: 20px;
+}
+
+.addBtn {
+    background-color: 'yellow';
+    border-color: 'yellow';
+    border-radius: '10%';
+    width: 60;
+    height: 40
+}
+
+/* .btn {
+    background-color: rgb(15, 15, 15);
+    color: rgb(248, 239, 239);
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+} */
+.BySearch_button {
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    min-width: 150px;
+    color: white;
+    background: #c908f0;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 103px;
+    display: block;
+    cursor: pointer;
+    box-shadow: 0 0 0 #cb69df;
+    animation: BySearch_button 2s infinite;
+}
+
+.BySearch_button:hover {
+    animation: BySearch_button 2s infinite;
+}
+
+@-webkit-keyframes BySearch_button {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #d17ce2;
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 5px #e9c7f0;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 #db84ec;
+    }
+}
+
+@keyframes BySearch_button {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 5px #e496f3;
+        box-shadow: 0 0 0 5px #ddc5e2;
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 #d57ce7;
+        box-shadow: 0 0 0 0 #d86fec;
+    }
+}
+
+.BySearchRUT {
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    min-width: 150px;
+    color: rgb(248, 239, 239);
+    background: #1a1036;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 103px;
+}
+
+.BySearchRUT:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 103px;
+}
+
+button {
+    background-color: transparent;
+}
+
+.BySearchRUT:active {
+    color: #000
+}
+
+.BySearchRUT:active:after {
+    background: transparent;
+}
+
+.BySearchRUT:hover:before {
+    opacity: 1;
+}
+
+.BySearchRUT:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 103px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.rotate {
+    animation: spin 3.5s infinite cubic-bezier(.85, .01, .25, 1);
+    position: relative;
+}
+
+h1.companyname {
+    animation: color 2s infinite cubic-bezier(.85, .01, .25, 1);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(-20deg) rotateY(20deg);
+    }
+
+    100% {
+        transform: rotateX(-20deg) rotateY(740deg);
+    }
+}
+
+@keyframes color {
+    0% {
+        fill: #99002f
+    }
+
+    50% {
+        fill: #ffc426
+    }
+
+    100% {
+        fill: #99002f
+    }
+}
+
+
+.companyname {
+    font-family: 'Impact';
+    color: black;
+    font-size: 25px;
+}
+
+.iconinsert {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.iconinsert1 {
+    width: 40px;
+    height: 40px;
+}
+
+.input {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.input_name {
+    width: 100%;
+}
+
+.SignIn {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.Authen_out {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.Signin_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Authentification {
+    width: 450px;
+    height: 70px;
+}
+
+.Authentification:focus-visible {
+    font-size: 25px;
+    border-color: #002bff !important;
+}
+
+.search_description {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Signin_button {
+    background-color: #009E60;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 6px;
+    border: none;
+    width: 450px;
+    height: 70px;
+}
+
+.Signin_button:hover {
+    background-color: #06d683;
+}
+
+.Signin_text {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Signin_text:hover {
+    color: #009E60;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 25px;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-family: "Blippo, fantasy";
+    font-weight: 800;
+}
+
+.part {
+    display: flex;
+    justify-content: center;
+}
+
+.Dropdownitem {
+    color: black;
+}
+
+.Button_hover {
+    color: #132369;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.Button_hover:hover {
+    color: #132369;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 12px;
+    border-color: #002bff;
+}
+
+.Button_hover:focus {
+    color: #132369;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 12px;
+    border-color: #002bff;
+}
+
+.Button_hover:active {
+    color: #132369;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 12px;
+    border-color: #002bff;
+}
+
+.NavbarButton {
+    border: none;
+    color: #132369;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0.75rem;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+}
+
+.NavbarButton:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.1s ease-out;
+}
+
+.NavbarButton:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.NavbarButton1 {
+    border: 1px solid #009E60;
+    color: #009E60;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0.6rem;
+    background-color: transparent;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+.animated-fill-button {
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.NavbarButton1:hover {
+    background: #009E60;
+    color: #fff;
+}
+
+.me-auto {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.Login_Background {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) -10%, rgba(255, 255, 255, 0) 70%), url(../images/0eef73355e8e8fa0c079c1f8bbf71eec.svg);
+}
